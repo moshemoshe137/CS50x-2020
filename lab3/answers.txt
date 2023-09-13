@@ -1,0 +1,29 @@
+sort1 uses: Bubble Sort
+
+How do you know?: 
+I measured:
+    - 14.370s on 50k random
+    - 11.263s on 50k reversed
+    - 0.1986s on 50k sorted
+Conclusion:
+    - Only bubble sort is fastest with pre-sorted data. It is likely that after the first pass-thru of 50k values, no values were swapped and sort1 knew the list was sorted.
+
+sort2 uses: Merge Sort
+
+How do you know?: 
+I measured:
+    - 2.867s on 50k random (really makes me think merge sort because my god was that fast!)
+    - 2.083s on 50k reversed
+    - 2.171s on 50k sorted
+Conclusion:
+    The same speed for each, regardless of setup. Very fast every time. It is Merge Sort. 
+
+sort3 uses: Selection Sort
+
+How do you know?: 
+I measured:
+    - 7.358s on 50k random
+    - 7.124s on 50k reversed
+    - 7.888s on 50k sorted
+Conclusion:
+    Equally bad in all cases. It must be selection sort. 
